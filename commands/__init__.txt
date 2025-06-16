@@ -1,0 +1,2 @@
+self.bind("<ButtonPress-3>", self.start_move)  
+self.bind("<B3-Motion>", self.do_move)

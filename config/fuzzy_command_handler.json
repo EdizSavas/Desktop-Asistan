@@ -1,0 +1,27 @@
+
+komut_varyantlari = {
+    "bilgisayari_kapat": ["bilgisayarı kapat", "pc kapat", "kapat bilgisayarı", "bilgisayar kapan"],
+    "yeniden_baslat": ["yeniden başlat", "reboot", "pc yeniden başlat"],
+    "oturumu_kapat": ["oturumu kapat", "çıkış yap"],
+    "uyku_modu": ["uyku moduna geç", "uyut", "bilgisayarı uyut"],
+    "ekrani_kilitle": ["ekranı kilitle", "kilitle ekranı"],
+    "gorev_yoneticisi": ["görev yöneticisini aç", "task manager"],
+    "ayarlar_paneli": ["ayarlar panelini aç", "ayarları aç"],
+    "sesi_ac": ["sesi aç", "ses aç"],
+    "sesi_kapat": ["sesi kapat", "ses kapat"],
+
+    "masaustu": ["masaüstünü aç", "masaüstünü göster", "desktop"],
+    "belgeler": ["belgeler klasörünü aç", "belgeleri aç"],
+    "indirilen": ["son indirilen dosyayı aç", "indirilenleri aç"],
+    "ekran_goruntusu": ["ekran görüntüsü al", "ekran görüntüsü çek"],
+    "ana_dizin": ["ana dizini aç", "kullanıcı klasörünü aç"],
+    "klasor_olustur": ["klasör oluştur", "klasör yarat", "klasörle beni", "yarat"],
+
+    "google_ara": ["google'da ara"],
+    "youtube_ara": ["youtube'da aç"],
+    "chatgpt_ac": ["chatgpt'yi aç"],
+    "hava_durumu": ["hava durumu nedir"],
+
+    "yardim": ["yardım ekranını aç", "yardım göster"],
+    "kisayol_degistir": ["sürükleme kısayolunu değiştir"]
+}
