@@ -13,14 +13,23 @@ def reboot_assistant() -> str:
         print("Ashborn yeniden başlatılıyor...")
 
         current_script = os.path.abspath(__file__)
-        base_dir = os.path.abspath(os.path.join(os.path.dirname(current_script), ".."))
-        exe_path = os.path.join(base_dir, "dist", "gui.exe")
-        py_path = os.path.join(base_dir, "main.py")
+        base_dir = os.path.dirname(current_script)
+
+        found_main = None
+        for _ in range(4): 
+            potential_main = os.path.join(base_dir, "main.py")
+            if os.path.exists(potential_main):
+                found_main = potential_main
+                break
+            base_dir = os.path.dirname(base_dir)
+
+        exe_path = os.path.join(os.path.dirname(current_script), "..", "dist", "gui.exe")
+        exe_path = os.path.abspath(exe_path)
 
         if os.path.exists(exe_path):
             subprocess.Popen([exe_path], cwd=os.path.dirname(exe_path))
-        elif os.path.exists(py_path):
-            subprocess.Popen([sys.executable, py_path], cwd=os.path.dirname(py_path))
+        elif found_main:
+            subprocess.Popen([sys.executable, found_main], cwd=os.path.dirname(found_main))
         else:
             return "[HATA] Uygulama yeniden başlatılamadı. 'gui.exe' veya 'main.py' bulunamadı."
 
