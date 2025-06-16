@@ -1,3 +1,9 @@
+# Kurulum/Kullanım
+
+Projeyi için gerekli bağımlılıkları yüklemek için lütfen install_requirements.py dosyasını terminalinizde "python install_requirements.py" komudunu kullanarak çalıştırınız yoksa PROJELER AÇILMAYACAKTIR/HATA VERECEKTİR
+
+Masaüstü Asistanı projesini açmak için terminalinizde "python main.py" komudunu çalıştırınız.
+
 # Teknik Altyapı ve Mimarisi
 
 1. Ana Program (‘main.py’):
